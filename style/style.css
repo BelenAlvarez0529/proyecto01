@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image:url(../imagen/imgcaritas4.jfif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+ /*Index*/
+
+ .contenedor_padre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "header" 
+  "main"
+  "footer";
+}
+
+.encabezado {
+  grid-area: header ;
+  background-color: palegoldenrod;
+  border:1px solid papayawhip;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+
+.encabezado div {
+  display: flex;
+  justify-content: center;
+}
+.logo { 
+  width: 15%;
+  border-radius: 50%;
+ 
+}
+.encabezado_barra {
+
+  list-style:none ;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+ nav ul li {
+  margin: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+/*main index*/
+
+main {
+  grid-area: main ;
+}
+h3 { display: flex;
+justify-content: center;}
+.imgSocialMedia { 
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.imgSocialMedia {
+  display: flex;
+  align-items: center;
+}
+.imgSocialMedia div {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+width: 50%;
+margin: 2%;
+}
+/*Pagina 2 Productos*/
+
+
+/*footer*/
+
+ footer {
+  grid-area: footer;
+  background-color: burlywood;
+  border: 1px solid rgb(199, 170, 131);
+ }
+
+
+@media screen and (min-width: 1024px){
+ 
+  /*index*/
+ .contenedor_padre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 350px 800px  150px ;
+  grid-template-areas: 
+  "header" 
+  "main"
+  "footer"; 
+ }
+
+
+
+ /*main*/
+
+.imgSocialMedia div { display: flex;
+flex-direction: row;
+justify-content: center;}
+
+.stickImg { 
+  width: 70%;
+}
+   
+/*pruductos*/ 
+
+.div_productos { 
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px;
+ 
+
+
+
+}
+  @media screen and (min-width 798px)
+  {
+    
+  }
