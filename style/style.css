@@ -4,130 +4,180 @@
 }
 
 main {
-  background-image:url(../imagen/imgcaritas4.jfif);
+  background-image: url(../imagen/imgcaritas4.jfif);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
- /*Index*/
 
- .contenedor_padre {
+/*Index*/
+.contenedor_padre {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr 1fr;
-  grid-template-areas: 
-  "header" 
-  "main"
-  "footer";
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
-
 .encabezado {
-  grid-area: header ;
+  grid-area: header;
   background-color: palegoldenrod;
-  border:1px solid papayawhip;
-  
-    flex-direction: column;
-    align-items: center;
-  }
+  border: 1px solid papayawhip;
 
+  flex-direction: column;
+  align-items: cente;
+}
 .encabezado div {
   display: flex;
   justify-content: center;
 }
-.logo { 
+.logo {
   width: 15%;
   border-radius: 50%;
- 
-}
+} 
 .encabezado_barra {
-
-  list-style:none ;
+  list-style: none;
   text-align: left;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
- nav ul li {
+nav ul li {
   margin: 40px;
 }
 nav ul li a {
   text-decoration: none;
 }
+
+.cambiocolor {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
 /*main index*/
 
 main {
-  grid-area: main ;
+  grid-area: main;
 }
-h3 { display: flex;
-justify-content: center;}
-.imgSocialMedia { 
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: rgb(136, 38, 136);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+}
+
+.imgSocialMedia {
   flex-direction: column;
   align-items: center;
-
-
 }
 .imgSocialMedia {
   display: flex;
   align-items: center;
 }
 .imgSocialMedia div {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-width: 50%;
-margin: 2%;
+  width: 50%;
+  margin: 2%;
 }
-/*Pagina 2 Productos*/
 
+.stickImg {
+  margin-inline: 5px;
+}
+
+/*Pagina 2 Productos*/
 
 /*footer*/
 
- footer {
+footer {
   grid-area: footer;
   background-color: burlywood;
   border: 1px solid rgb(199, 170, 131);
- }
+}
 
+/*animacion*/
+.contenedor_body-animacion {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+.contenedor_h1-animacion {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  color: blueviolet;
+}
+.contenedor_inicio {
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
+}
+.gradiente:hover {
+  width: 80px;
+  height: 60px;
+  margin: 80px 90px;
+  border-radius: 5px;
+  background-color: blue;
+  transform: scale(2);
+  transition: all 2s;
+}
+.gradiente1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: blue;
+  font-family: monospace;
+}
 
-@media screen and (min-width: 1024px){
- 
+@media screen and (min-width: 1024px) {
   /*index*/
- .contenedor_padre {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 350px 800px  150px ;
-  grid-template-areas: 
-  "header" 
-  "main"
-  "footer"; 
- }
+  .contenedor_padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 800px 150px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  .cambiocolor:hover {
+    color: rgb(136, 38, 136);
+    border-radius: 13px;
+  }
+  .stickImg:hover {
+    transform: scale(2);
+    transition: 0.5s;
+  }
+}
 
+/*main*/
 
+.imgSocialMedia div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
- /*main*/
-
-.imgSocialMedia div { display: flex;
-flex-direction: row;
-justify-content: center;}
-
-.stickImg { 
+.stickImg {
   width: 70%;
 }
-   
-/*pruductos*/ 
 
-.div_productos { 
+/*pruductos*/
+
+.div_productos {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
- 
-
-
-
 }
-  @media screen and (min-width 798px)
-  {
-    
-  }
+
+@media screen and (min-width 798px) {
+}
